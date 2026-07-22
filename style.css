@@ -490,3 +490,79 @@ font-size:32px;
 }
 
 }
+
+/* ==========================
+CHECKOUT
+========================== */
+
+.checkout{
+
+padding:90px 10%;
+
+text-align:center;
+
+}
+
+.checkout h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.checkout p{
+
+color:#aaa;
+
+margin-bottom:40px;
+
+}
+
+.checkout-box{
+
+max-width:700px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.checkout-box input,
+.checkout-box select{
+
+padding:16px;
+
+background:#111;
+
+border:1px solid #333;
+
+color:#fff;
+
+border-radius:8px;
+
+font-size:16px;
+
+}
+
+.checkout-box input:focus,
+.checkout-box select:focus{
+
+outline:none;
+
+border-color:#FFD700;
+
+box-shadow:0 0 15px rgba(255,215,0,.35);
+
+}
+
+.checkout-box button{
+
+margin-top:10px;
+
+}
