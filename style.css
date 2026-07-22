@@ -814,3 +814,95 @@ font-size:18px;
 color:#ddd;
 
 }
+
+/*==========================
+BACKTEST
+===========================*/
+
+.backtest{
+
+padding:90px 8%;
+
+text-align:center;
+
+}
+
+.backtest h2{
+
+font-size:45px;
+
+margin-bottom:15px;
+
+}
+
+.backtest p{
+
+color:#aaa;
+
+margin-bottom:50px;
+
+}
+
+.backtest-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.backtest-card{
+
+background:#111;
+
+border:1px solid #222;
+
+border-radius:18px;
+
+overflow:hidden;
+
+transition:.35s;
+
+}
+
+.backtest-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 25px rgba(255,215,0,.25);
+
+}
+
+.backtest-card img{
+
+width:100%;
+
+display:block;
+
+cursor:pointer;
+
+}
+
+.backtest-card h3{
+
+margin-top:25px;
+
+font-size:28px;
+
+}
+
+.backtest-card p{
+
+margin:20px;
+
+color:#bbb;
+
+}
+
+.backtest-card button{
+
+margin-bottom:30px;
+
+}
