@@ -566,3 +566,43 @@ box-shadow:0 0 15px rgba(255,215,0,.35);
 margin-top:10px;
 
 }
+
+/* ==========================
+PRICE BOX
+========================== */
+
+#price{
+
+font-size:20px;
+
+font-weight:bold;
+
+color:#FFD700;
+
+text-align:center;
+
+background:#181818;
+
+}
+
+.checkout-box input[readonly]{
+
+cursor:not-allowed;
+
+background:#1c1c1c;
+
+}
+
+.checkout-box button{
+
+transition:.3s;
+
+}
+
+.checkout-box button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 0 20px rgba(255,215,0,.35);
+
+}
