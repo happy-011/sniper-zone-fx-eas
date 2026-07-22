@@ -321,12 +321,38 @@ element.textContent=current;
 Backtest Image Preview
 ===========================*/
 
+/*==========================
+LIGHTBOX
+===========================*/
+
+const lightbox=document.getElementById("lightbox");
+const lightboxImg=document.getElementById("lightboxImg");
+const closeLightbox=document.getElementById("closeLightbox");
+
 document.querySelectorAll(".backtest-card img").forEach((img)=>{
 
 img.addEventListener("click",()=>{
 
-window.open(img.src,"_blank");
+lightbox.style.display="flex";
+
+lightboxImg.src=img.src;
 
 });
+
+});
+
+closeLightbox.addEventListener("click",()=>{
+
+lightbox.style.display="none";
+
+});
+
+lightbox.addEventListener("click",(e)=>{
+
+if(e.target===lightbox){
+
+lightbox.style.display="none";
+
+}
 
 });
