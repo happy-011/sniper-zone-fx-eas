@@ -1,1 +1,154 @@
+/* ===================================
+   Laptop
+=================================== */
 
+@media(max-width:1200px){
+
+.container{
+
+    width:95%;
+
+}
+
+}
+
+
+/* ===================================
+   Tablet
+=================================== */
+
+@media(max-width:992px){
+
+header .container{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.logo img{
+
+    width:160px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.section-title{
+
+    font-size:32px;
+
+}
+
+section{
+
+    padding:70px 0;
+
+}
+
+}
+
+
+/* ===================================
+   Mobile
+=================================== */
+
+@media(max-width:768px){
+
+header{
+
+    position:relative;
+
+}
+
+header .container{
+
+    padding:15px 0;
+
+}
+
+nav{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:140px;
+
+}
+
+.section-title{
+
+    font-size:28px;
+
+}
+
+.section-subtitle{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+section{
+
+    padding:60px 0;
+
+}
+
+}
+
+
+/* ===================================
+   Small Mobile
+=================================== */
+
+@media(max-width:480px){
+
+.container{
+
+    width:92%;
+
+}
+
+.section-title{
+
+    font-size:24px;
+
+}
+
+body{
+
+    font-size:15px;
+
+}
+
+.logo img{
+
+    width:120px;
+
+}
+
+}
