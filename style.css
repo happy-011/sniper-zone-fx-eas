@@ -1238,3 +1238,67 @@ color:#bbb;
 line-height:28px;
 
 }
+
+/*==========================
+TELEGRAM SUPPORT
+===========================*/
+
+.telegram-support{
+
+padding:90px 8%;
+
+text-align:center;
+
+}
+
+.telegram-support h2{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+}
+
+.telegram-support p{
+
+color:#aaa;
+
+max-width:700px;
+
+margin:auto;
+
+margin-bottom:40px;
+
+line-height:30px;
+
+}
+
+.telegram-btn{
+
+display:inline-block;
+
+padding:18px 45px;
+
+background:#229ED9;
+
+color:#fff;
+
+text-decoration:none;
+
+font-size:20px;
+
+font-weight:bold;
+
+border-radius:10px;
+
+transition:.35s;
+
+}
+
+.telegram-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 30px rgba(34,158,217,.45);
+
+}
