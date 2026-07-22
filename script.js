@@ -316,3 +316,17 @@ element.textContent=current;
 },20);
 
 }
+
+/*==========================
+Backtest Image Preview
+===========================*/
+
+document.querySelectorAll(".backtest-card img").forEach((img)=>{
+
+img.addEventListener("click",()=>{
+
+window.open(img.src,"_blank");
+
+});
+
+});
