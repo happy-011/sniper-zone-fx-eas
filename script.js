@@ -282,3 +282,37 @@ behavior:"smooth"
 });
 
 }
+
+/* ==========================
+Animated Counters
+========================== */
+
+animateCounter("clients",250);
+animateCounter("downloads",1200);
+animateCounter("sales",950);
+
+function animateCounter(id,target){
+
+const element=document.getElementById(id);
+
+if(!element) return;
+
+let current=0;
+
+const interval=setInterval(()=>{
+
+current+=5;
+
+if(current>=target){
+
+current=target;
+
+clearInterval(interval);
+
+}
+
+element.textContent=current;
+
+},20);
+
+}
