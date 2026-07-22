@@ -48,6 +48,22 @@ color:var(--gold);
 
 }
 
+.hero-right img,
+.ea-image img,
+.gallery img{
+
+transition:.4s;
+
+}
+
+.hero-right img:hover,
+.ea-image img:hover,
+.gallery img:hover{
+
+transform:scale(1.03);
+
+}
+
 /*==============================
 
 EXPERT ADVISOR CARD
