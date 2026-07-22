@@ -200,3 +200,71 @@ navigator.clipboard.writeText(wallet.value);
 alert("Wallet Address Copied Successfully");
 
 }
+
+const ea=document.getElementById("eaSelect");
+
+if(ea){
+
+ea.addEventListener("change",()=>{
+
+document.getElementById("price").value="$"+ea.value;
+
+});
+
+}
+
+function submitOrder(){
+
+const name=document.querySelector('input[placeholder="Your Name"]').value;
+
+const email=document.querySelector('input[type="email"]').value;
+
+const country=document.querySelector('input[placeholder="Country"]').value;
+
+const product=document.getElementById("eaSelect").value;
+
+const hash=document.getElementById("txhash").value;
+
+if(name==""){
+
+alert("Enter Your Name");
+
+return;
+
+}
+
+if(email==""){
+
+alert("Enter Email");
+
+return;
+
+}
+
+if(country==""){
+
+alert("Enter Country");
+
+return;
+
+}
+
+if(product==""){
+
+alert("Select EA");
+
+return;
+
+}
+
+if(hash==""){
+
+alert("Enter Transaction Hash");
+
+return;
+
+}
+
+alert("Payment Submitted Successfully!\n\nOur system will verify your payment.");
+
+}
