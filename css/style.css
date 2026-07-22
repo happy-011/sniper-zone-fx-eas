@@ -143,3 +143,61 @@ color:var(--gray);
 line-height:1.8;
 
 }
+
+/*==================================
+
+WHY CHOOSE US
+
+==================================*/
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+.why-card{
+
+background:#171717;
+
+padding:35px;
+
+border-radius:18px;
+
+border:1px solid #2c2c2c;
+
+transition:.3s;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--gold);
+
+}
+
+.why-card h3{
+
+font-size:24px;
+
+color:var(--gold);
+
+margin-bottom:18px;
+
+}
+
+.why-card p{
+
+color:var(--gray);
+
+line-height:1.8;
+
+}
