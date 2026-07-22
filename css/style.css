@@ -287,3 +287,49 @@ line-height:1.8;
 max-height:200px;
 
 }
+
+/*==================================
+
+TELEGRAM CONTACT
+
+==================================*/
+
+.telegram-contact{
+
+background:#171717;
+
+padding:70px 40px;
+
+border-radius:20px;
+
+text-align:center;
+
+border:1px solid #2f2f2f;
+
+margin-top:80px;
+
+}
+
+.telegram-contact h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+color:var(--gold);
+
+}
+
+.telegram-contact p{
+
+max-width:700px;
+
+margin:0 auto 35px;
+
+color:var(--gray);
+
+font-size:18px;
+
+line-height:1.8;
+
+}
