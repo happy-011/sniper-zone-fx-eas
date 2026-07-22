@@ -152,3 +152,69 @@ body{
 }
 
 }
+
+/* ===================================
+   Hero Responsive
+=================================== */
+
+@media(max-width:992px){
+
+.hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    gap:50px;
+
+}
+
+.hero p{
+
+    margin:auto;
+
+    margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+}
+
+.hero-image img{
+
+    max-width:420px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+    font-size:36px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.hero-image img{
+
+    max-width:320px;
+
+}
+
+}
