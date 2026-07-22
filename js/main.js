@@ -1,1 +1,105 @@
+// ================================
+// Homepage EA Cards
+// ================================
 
+const container = document.getElementById("eaContainer");
+
+if (container) {
+
+    let cards = "";
+
+    expertAdvisors.forEach((ea) => {
+
+        cards += `
+
+        <div class="ea-card">
+
+            <img src="${ea.cover}" alt="${ea.name}">
+
+            <div class="ea-content">
+
+                <h3>${ea.name}</h3>
+
+                <div class="price">${ea.price}</div>
+
+                <a href="ea.html?id=${ea.id}" class="btn">
+
+                    View Details
+
+                </a>
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
+
+    container.innerHTML = cards;
+
+}
+
+
+
+// ================================
+// EA Details Page
+// ================================
+
+const params = new URLSearchParams(window.location.search);
+
+const id = params.get("id");
+
+if (id && document.getElementById("eaName")) {
+
+    const ea = expertAdvisors.find(item => item.id == id);
+
+    if (ea) {
+
+        document.title = ea.name;
+
+        document.getElementById("eaName").innerText = ea.name;
+
+        document.getElementById("eaPrice").innerText = ea.price;
+
+        document.getElementById("eaDescription").innerText = ea.description;
+
+
+
+        document.getElementById("coverImage").src = ea.cover;
+
+
+
+        // Features
+
+        let featureHTML = "";
+
+        ea.features.forEach(feature => {
+
+            featureHTML += `<li>${feature}</li>`;
+
+        });
+
+        document.getElementById("featureList").innerHTML = featureHTML;
+
+
+
+        // Gallery
+
+        let galleryHTML = "";
+
+        ea.screenshots.forEach(image => {
+
+            galleryHTML += `
+
+            <img src="${image}" alt="Backtest">
+
+            `;
+
+        });
+
+        document.getElementById("gallery").innerHTML = galleryHTML;
+
+    }
+
+}
