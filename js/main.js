@@ -1,3 +1,47 @@
+const container = document.getElementById("eaContainer");
+
+if(container){
+
+    expertAdvisors.forEach(ea=>{
+
+        container.innerHTML += `
+
+        <div class="ea-card">
+
+            <div class="ea-badge">
+                MT5
+            </div>
+
+            <img src="${ea.cover}" alt="${ea.name}">
+
+            <div class="ea-content">
+
+                <h3>${ea.name}</h3>
+
+                <p>${ea.description}</p>
+
+                <div class="ea-price">
+                    ${ea.price}
+                </div>
+
+                <div class="ea-rating">
+                    ★★★★★
+                </div>
+
+                <a href="ea.html?id=${ea.id}" class="btn">
+                    View Details
+                </a>
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
+
+}
+
 // ================================
 // Homepage EA Cards
 // ================================
