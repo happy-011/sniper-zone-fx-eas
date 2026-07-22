@@ -1,15 +1,27 @@
+// =======================================
+// SNIPER ZONE FX
+// MAIN.JS
+// =======================================
+
+
+// =======================================
+// HOMEPAGE EA CARDS
+// =======================================
+
 const container = document.getElementById("eaContainer");
 
-if(container){
+if (container) {
 
-    expertAdvisors.forEach(ea=>{
+    expertAdvisors.forEach(ea => {
 
         container.innerHTML += `
 
         <div class="ea-card">
 
             <div class="ea-badge">
+
                 MT5
+
             </div>
 
             <img src="${ea.cover}" alt="${ea.name}">
@@ -21,15 +33,21 @@ if(container){
                 <p>${ea.description}</p>
 
                 <div class="ea-price">
+
                     ${ea.price}
+
                 </div>
 
                 <div class="ea-rating">
+
                     ★★★★★
+
                 </div>
 
                 <a href="ea.html?id=${ea.id}" class="btn">
+
                     View Details
+
                 </a>
 
             </div>
@@ -42,57 +60,11 @@ if(container){
 
 }
 
-// ================================
-// Homepage EA Cards
-// ================================
-
-container.innerHTML += `
-
-<div class="ea-card">
-
-    <div class="ea-badge">
-
-        MT5
-
-    </div>
-
-    <img src="${ea.cover}" alt="${ea.name}">
-
-    <div class="ea-content">
-
-        <h3>${ea.name}</h3>
-
-        <p>${ea.description}</p>
-
-        <div class="ea-price">
-
-            ${ea.price}
-
-        </div>
-
-        <div class="ea-rating">
-
-            ★★★★★
-
-        </div>
-
-        <a href="ea.html?id=${ea.id}" class="btn">
-
-            View Details
-
-        </a>
-
-    </div>
-
-</div>
-
-`;
 
 
-
-// ================================
-// EA Details Page
-// ================================
+// =======================================
+// EA DETAILS PAGE
+// =======================================
 
 const params = new URLSearchParams(window.location.search);
 
@@ -112,8 +84,6 @@ if (id && document.getElementById("eaName")) {
 
         document.getElementById("eaDescription").innerText = ea.description;
 
-
-
         document.getElementById("coverImage").src = ea.cover;
 
 
@@ -124,7 +94,11 @@ if (id && document.getElementById("eaName")) {
 
         ea.features.forEach(feature => {
 
-            featureHTML += `<li>${feature}</li>`;
+            featureHTML += `
+
+            <li>${feature}</li>
+
+            `;
 
         });
 
@@ -140,7 +114,7 @@ if (id && document.getElementById("eaName")) {
 
             galleryHTML += `
 
-            <img src="${image}" alt="Backtest">
+            <img src="${image}" alt="Backtest Report">
 
             `;
 
@@ -152,9 +126,11 @@ if (id && document.getElementById("eaName")) {
 
 }
 
-/*==========================
-FAQ
-==========================*/
+
+
+// =======================================
+// FAQ
+// =======================================
 
 const faqItems = document.querySelectorAll(".faq-item");
 
@@ -170,34 +146,40 @@ faqItems.forEach(item => {
 
 });
 
-/*==============================
-SCROLL TO TOP
-==============================*/
+
+
+// =======================================
+// SCROLL TO TOP
+// =======================================
 
 const topBtn = document.getElementById("topBtn");
 
-window.addEventListener("scroll",()=>{
+if (topBtn) {
 
-if(window.scrollY>400){
+    window.addEventListener("scroll", () => {
 
-topBtn.style.display="block";
+        if (window.scrollY > 400) {
 
-}else{
+            topBtn.style.display = "block";
 
-topBtn.style.display="none";
+        } else {
+
+            topBtn.style.display = "none";
+
+        }
+
+    });
+
+    topBtn.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
+
+    });
 
 }
-
-});
-
-topBtn.onclick=()=>{
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
-};
