@@ -186,3 +186,17 @@ behavior:"smooth"
 });
 
 });
+
+function copyWallet(){
+
+const wallet=document.getElementById("wallet");
+
+wallet.select();
+
+wallet.setSelectionRange(0,99999);
+
+navigator.clipboard.writeText(wallet.value);
+
+alert("Wallet Address Copied Successfully");
+
+}
