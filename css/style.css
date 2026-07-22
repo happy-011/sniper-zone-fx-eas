@@ -570,3 +570,32 @@ color:#777;
 font-size:15px;
 
 }
+
+
+.btn{
+
+display:inline-block;
+
+padding:14px 30px;
+
+background:var(--gold);
+
+color:#000;
+
+font-weight:700;
+
+text-decoration:none;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+opacity:.9;
+
+}
