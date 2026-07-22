@@ -57,3 +57,25 @@ font-size:16px;
 }
 
 }
+
+@media(max-width:768px){
+
+.telegram-contact{
+
+padding:50px 25px;
+
+}
+
+.telegram-contact h2{
+
+font-size:30px;
+
+}
+
+.telegram-contact p{
+
+font-size:16px;
+
+}
+
+}
