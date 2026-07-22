@@ -356,3 +356,46 @@ lightbox.style.display="none";
 }
 
 });
+
+/*==========================
+FAQ
+===========================*/
+
+document.querySelectorAll(".faq-question").forEach((question)=>{
+
+question.addEventListener("click",()=>{
+
+const answer=question.nextElementSibling;
+
+const icon=question.querySelector("span");
+
+if(answer.style.maxHeight){
+
+answer.style.maxHeight=null;
+
+icon.innerHTML="+";
+
+}
+else{
+
+document.querySelectorAll(".faq-answer").forEach((item)=>{
+
+item.style.maxHeight=null;
+
+});
+
+document.querySelectorAll(".faq-question span").forEach((i)=>{
+
+i.innerHTML="+";
+
+});
+
+answer.style.maxHeight=answer.scrollHeight+"px";
+
+icon.innerHTML="−";
+
+}
+
+});
+
+});
