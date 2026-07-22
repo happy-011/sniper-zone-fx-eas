@@ -268,3 +268,17 @@ return;
 alert("Payment Submitted Successfully!\n\nOur system will verify your payment.");
 
 }
+
+function buyEA(product,price){
+
+document.getElementById("eaSelect").value=price.replace("$","");
+
+document.getElementById("price").value=price;
+
+document.querySelector(".checkout").scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
