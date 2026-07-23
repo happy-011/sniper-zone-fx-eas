@@ -215,8 +215,8 @@ HERO
 
 display:block;
 
-padding-top:140px;
-padding-bottom:120px;
+padding-top:120px;
+padding-bottom:40px;
 
 }
 
@@ -398,7 +398,7 @@ ABOUT
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:30px;
-    margin-top:60px;
+    margin-top:30px;
 
 }
 
@@ -444,7 +444,7 @@ WHY CHOOSE US
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:30px;
-    margin-top:60px;
+    margin-top:30px;
 
 }
 
@@ -490,7 +490,7 @@ EXPERT ADVISOR SECTION
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:35px;
-    margin-top:60px;
+    margin-top:30px;
 
 }
 
@@ -671,7 +671,7 @@ FAQ
 .faq{
 
     max-width:900px;
-    margin:60px auto 0;
+    margin:30px auto 0;
 
 }
 
@@ -740,7 +740,7 @@ TELEGRAM CONTACT
     border-radius:20px;
     padding:70px 40px;
     text-align:center;
-    margin-top:80px;
+    margin-top:30px;
 
 }
 
@@ -768,7 +768,7 @@ FOOTER
 footer{
 
     background:#111;
-    margin-top:100px;
+    margin-top:40px;
     padding:70px 0 30px;
     border-top:1px solid var(--border);
 
