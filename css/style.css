@@ -646,18 +646,19 @@ EA DETAILS PAGE
 
 .gallery{
 
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:50px;
 
 }
 
 .gallery img{
 
     width:100%;
-    border-radius:15px;
-    border:1px solid var(--border);
+    max-width:1300px;
+    border-radius:18px;
+    border:2px solid var(--gold);
 
 }
 
