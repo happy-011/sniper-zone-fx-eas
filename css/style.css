@@ -138,7 +138,9 @@ header .container{
 
 .logo img{
 
-    height:160px;
+    height:110px;
+
+    width:auto;
 
 }
 
