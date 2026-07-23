@@ -21,9 +21,6 @@ const expertAdvisors = [
 
         screenshots: [
             "images/ea1/report1.webp",
-            "images/ea1/report2.webp",
-            "images/ea1/report3.webp",
-            "images/ea1/report4.webp"
         ]
     },
 
@@ -50,9 +47,7 @@ const expertAdvisors = [
 
         screenshots: [
             "images/ea2/report1.webp",
-            "images/ea2/report2.webp",
-            "images/ea2/report3.webp",
-            "images/ea2/report4.webp"
+
         ]
     }
 
